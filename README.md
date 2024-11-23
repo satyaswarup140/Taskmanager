@@ -24,7 +24,7 @@ Prerequisites:
 
 3. Start the Development Server Start the React development server:
    . npm start
-   . The app will automatically open in your default browser at http://localhost:3000.
+   . The app will automatically open in your default browser at http://localhost:3004.
 
 4. Build for Production (Optional) To create an optimized production build, run:
    
