@@ -1,38 +1,100 @@
-.App {
+/* App.css */
+
+/* Body Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f3f4f6; /* Light gray background */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px; /* Padding for smaller screens */
+  box-sizing: border-box;
+}
+
+/* Form Container */
+form {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 450px; /* Limit the form width */
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Heading Style */
+h1 {
+  font-size: 2rem;
+  color: #374151; /* Dark gray */
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: bold;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Input, Textarea, and Select Fields */
+input,
+textarea,
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #d1d5db; /* Light gray border */
+  border-radius: 5px;
+  font-size: 1rem;
+  font-family: inherit;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+/* Input Focus Styles */
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border-color: #2563eb; /* Blue border on focus */
+  box-shadow: 0 0 5px rgba(37, 99, 235, 0.5); /* Blue shadow */
+}
+
+/* Button Styles */
+button {
+  background-color: #2563eb; /* Blue */
   color: white;
+  padding: 12px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  font-weight: bold;
+  transition: all 0.3s ease;
 }
 
-.App-link {
-  color: #61dafb;
+/* Button Hover and Active States */
+button:hover {
+  background-color: #1e40af; /* Darker blue */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+button:active {
+  background-color: #1c4dd9; /* Slightly lighter blue */
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.2); /* Button press effect */
+}
+
+/* Transition for Smooth Effects */
+input,
+textarea,
+select,
+button {
+  transition: all 0.3s ease-in-out;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  form {
+    width: 100%;
+    padding: 15px;
   }
-  to {
-    transform: rotate(360deg);
+
+  h1 {
+    font-size: 1.5rem;
   }
 }
